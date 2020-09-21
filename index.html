@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Weather App</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    </head>
+    <body>
+        <div class="container" data-container>
+            <form class="formForCity" id="form">
+                <label for="cityInput" class="searchLabel">Search City</label>
+                <input type="text" name="cityInput" class="cityInput">
+                <button class="getWeatherButton" type="submit">get the Weather</button>
+            </form>
+
+            <h4 class='cityName' data-cityName ="">City name</h4>
+            <h5 class='weatherDescription' data-weatherDescription >--</h5>
+            <h2 class='temp' data-temp>temperature</h2>
+            <h6 class="clock date" data-date>--</h6>
+            <h5 class="clock time" data-clock>--</h5>
+            <a href="fiveDayForecast.html" class="getWeatherButton">Get 5 Day Forecast</a>
+            <div id="map"> there was an error displaying the map</div>
+        </div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDforlHJAJsBfFmwmAHUmnTgXOzU5dDq5U&callback=initMap&libraries=places" defer
+        type="text/javascript"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+
+</html>

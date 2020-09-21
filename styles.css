@@ -1,0 +1,148 @@
+/*reset */
+*{
+    margin: 0em;
+    padding:0; 
+    font-size:100%; 
+    line-height:1;
+}
+/*font styles*/
+@font-face{
+    src: url(resources/fonts/FiraSansCondensed-SemiBold.ttf);
+    font-family: fira;
+}
+/*non changing styles*/
+body{
+    font-family: fira;
+}
+#map{
+    height: 500px;
+    width: 500px;
+    background-color: crimson;
+    padding: 0;
+}
+/*phone*/
+    body{
+
+        background-color: red;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: .5em;
+        background-color: purple;
+        word-break: normal;
+    }
+    .formForCity{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        
+        
+    }
+    .searchLabel{
+        font-family: Arial, Helvetica, sans-serif;
+        padding-bottom: 1em;
+    }
+
+    .cityInput{
+        width: 75%;
+        max-width: 400px;
+        padding: 0 2%;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box;         /* Opera/IE 8+ */
+        text-align: center;
+    }
+
+    .getWeatherButton{
+        display: flex;
+        color: black;
+        background-color: cornflowerblue;
+        border: .1em solid cornflowerblue ;
+        width: 100vmax;
+        max-width: 150px;
+        justify-content: center;
+        border-radius: 12px;
+        margin: .3em;
+        padding: .8em;
+        text-decoration: none;
+        outline: none;
+    }
+    .getWeatherButton:hover{
+        display: flex;
+        color: white;
+        background-color: cornflowerblue;
+        width: 100vmax;
+        max-width: 150px;
+        justify-content: center;
+        box-shadow:5px 5px white inset;
+        border: none;
+    }
+    .getWeatherButton:active{
+        outline: none;
+    }
+    .cityName{
+        font-size: 1.5em;
+        padding: .7em;
+    }
+    .weatherDescription{
+        font-size: 1em;
+    }
+    .temp{
+        font-size: 1.5em;
+        padding: .7em;
+    }
+    .clock{
+        font-family: monospace;
+        padding-bottom: 1em;
+        font-size: .95em;
+    }
+
+    /*5 Day Forecast Styles PHONE */
+
+    .fiveDays{
+        display: flex;
+        flex-direction: column;
+    }
+    .forecastDay{
+        padding: 1em;
+    }
+
+/*tablet*/
+@media screen and (min-width:400px){
+    body {
+        background-color: pink;
+    }
+    .cityName{
+        font-size: 2em;
+    
+    }
+    .weatherDescription{
+        font-size: 1.5em;
+    }
+    .temp{
+        font-size: 2em;
+        
+    }
+    .clock{
+        font-size: 1em;
+    
+    }
+    .fiveDayForecast{
+        font-size: 1.2em;
+    }
+
+}
+
+/*desktop*/
+@media screen and (min-width:800px){
+    body{
+        background-color: royalblue;
+    }
+}
+
+
+/*5 Day Forecast Styles */
